@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/17"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.hatoslotto.ForexPositionController"
+      spacing="10" alignment="CENTER">
+    <Label text="Pozíció Nyitása" style="-fx-font-size: 16px;"/>
+    <HBox spacing="10" alignment="CENTER">
+        <Label text="Válassz devizapárt:"/>
+        <ComboBox fx:id="currencyPairComboBox" prefWidth="150"/>
+    </HBox>
+    <HBox spacing="10" alignment="CENTER">
+        <Label text="Mennyiség:"/>
+        <TextField fx:id="unitsTextField" promptText="Pl. 1000"/>
+    </HBox>
+    <HBox spacing="10" alignment="CENTER">
+        <Label text="Irány:"/>
+        <RadioButton text="Vétel" fx:id="buyRadioButton"/>
+        <RadioButton text="Eladás" fx:id="sellRadioButton"/>
+    </HBox>
+    <Button text="Pozíció Nyitása" onAction="#onOpenPositionClick"/>
+    <Label fx:id="resultLabel" text="Eredmény: -" style="-fx-font-size: 14px; -fx-font-weight: bold;"/>
+</VBox>

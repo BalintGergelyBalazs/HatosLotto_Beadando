@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/17"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.hatoslotto.ForexHistoricalController"
+      spacing="10" alignment="CENTER">
+    <Label text="Forex Historikus Árfolyamok" style="-fx-font-size: 16px;"/>
+    <HBox spacing="10" alignment="CENTER">
+        <Label text="Válassz devizapárt:"/>
+        <ComboBox fx:id="currencyPairComboBox" prefWidth="150"/>
+    </HBox>
+    <HBox spacing="10" alignment="CENTER">
+        <Label text="Kezdő dátum:"/>
+        <DatePicker fx:id="startDatePicker"/>
+        <Label text="Záró dátum:"/>
+        <DatePicker fx:id="endDatePicker"/>
+    </HBox>
+    <Button text="Adatok betöltése" onAction="#onLoadDataClick"/>
+    <TableView fx:id="candlesTable" prefHeight="200" prefWidth="600">
+        <columns>
+            <TableColumn text="Dátum" fx:id="dateCol"/>
+            <TableColumn text="Nyitó ár" fx:id="openCol"/>
+            <TableColumn text="Záró ár" fx:id="closeCol"/>
+            <TableColumn text="Minimum ár" fx:id="lowCol"/>
+            <TableColumn text="Maximum ár" fx:id="highCol"/>
+        </columns>
+    </TableView>
+    <LineChart fx:id="lineChart" title="Historikus árfolyamok" prefHeight="300" prefWidth="600">
+        <xAxis>
+            <CategoryAxis fx:id="xAxis"/>
+        </xAxis>
+        <yAxis>
+            <NumberAxis fx:id="yAxis"/>
+        </yAxis>
+    </LineChart>
+</VBox>

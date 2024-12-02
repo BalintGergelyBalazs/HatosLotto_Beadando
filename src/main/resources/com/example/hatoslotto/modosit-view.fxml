@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/17"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.hatoslotto.ModositController"
+      spacing="10" alignment="CENTER">
+    <Label text="Rekord módosítása a Húzott számok táblában" />
+    <ComboBox fx:id="recordComboBox" promptText="Válassz egy rekordot"/>
+    <TextField fx:id="huzasIdField" promptText="Húzás ID" />
+    <TextField fx:id="szamField" promptText="Szám" />
+    <Button text="Rekord módosítása" onAction="#onModifyRecordButtonClick" />
+    <Label fx:id="statusLabel" text="" />
+</VBox>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/17"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.hatoslotto.ForexOpenTradesController"
+      spacing="10" alignment="CENTER">
+    <Label text="Nyitott Pozíciók" style="-fx-font-size: 16px;"/>
+    <TableView fx:id="openTradesTable" prefHeight="300" prefWidth="600">
+        <columns>
+            <TableColumn text="Trade ID" fx:id="tradeIdCol"/>
+            <TableColumn text="Devizapár" fx:id="instrumentCol"/>
+            <TableColumn text="Egységek" fx:id="unitsCol"/>
+            <TableColumn text="Ár" fx:id="priceCol"/>
+        </columns>
+    </TableView>
+    <Button text="Frissítés" onAction="#onRefreshClick"/>
+</VBox>

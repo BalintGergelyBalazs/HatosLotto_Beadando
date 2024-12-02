@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/17"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.hatoslotto.Olvas2Controller"
+      spacing="10" alignment="CENTER">
+    <!-- Szűrési feltételek -->
+    <Label text="Szűrési feltételek" />
+    <HBox spacing="10">
+        <TextField fx:id="szamField" promptText="Írd be a számot..." />
+        <ComboBox fx:id="huzasIdCombo" promptText="Válassz húzás ID-t" />
+    </HBox>
+    <HBox spacing="10">
+        <RadioButton fx:id="opcio1Radio" text="Páros ID" toggleGroup="$radioGroup" />
+        <RadioButton fx:id="opcio2Radio" text="Páratlan ID" toggleGroup="$radioGroup" />
+    </HBox>
+    <HBox spacing="10">
+        <Button text="Szűrés" onAction="#onFilterButtonClick" />
+        <Button text="Szűrések törlése" onAction="#onClearFiltersButtonClick" />
+    </HBox>
+
+    <!-- Táblázatok -->
+    <Label text="Húzások táblázat" />
+    <TableView fx:id="huzasTable">
+        <columns>
+            <TableColumn text="ID" fx:id="huzasIdColumn" />
+            <TableColumn text="Év" fx:id="huzasEvColumn" />
+            <TableColumn text="Hét" fx:id="huzasHetColumn" />
+        </columns>
+    </TableView>
+
+    <Label text="Húzott számok táblázat" />
+    <TableView fx:id="huzottTable">
+        <columns>
+            <TableColumn text="ID" fx:id="huzottIdColumn" />
+            <TableColumn text="Húzás ID" fx:id="huzottHuzasIdColumn" />
+            <TableColumn text="Szám" fx:id="huzottSzamColumn" />
+        </columns>
+    </TableView>
+
+    <Label text="Nyeremények táblázat" />
+    <TableView fx:id="nyeremenyTable">
+        <columns>
+            <TableColumn text="ID" fx:id="nyeremenyIdColumn" />
+            <TableColumn text="Húzás ID" fx:id="nyeremenyHuzasIdColumn" />
+            <TableColumn text="Találat" fx:id="nyeremenyTalalatColumn" />
+            <TableColumn text="Darab" fx:id="nyeremenyDarabColumn" />
+            <TableColumn text="Érték" fx:id="nyeremenyErtekColumn" />
+        </columns>
+    </TableView>
+</VBox>

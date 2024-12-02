@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/17"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.hatoslotto.TorolController"
+      spacing="10" alignment="CENTER">
+    <Label text="Rekord törlése a Húzott számok táblából" />
+    <ComboBox fx:id="recordComboBox" promptText="Válassz egy rekordot"/>
+    <Button text="Rekord törlése" onAction="#onDeleteRecordButtonClick" />
+    <Label fx:id="statusLabel" text="" />
+</VBox>

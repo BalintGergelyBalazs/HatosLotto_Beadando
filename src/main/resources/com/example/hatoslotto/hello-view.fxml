@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/17"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.hatoslotto.HelloController">
+    <top>
+        <MenuBar>
+            <Menu text="Adatbázis">
+                <MenuItem text="Olvas" onAction="#onOlvasMenuClick"/>
+                <MenuItem text="Olvas2 (Szűrés)" onAction="#onOlvas2MenuClick"/>
+                <MenuItem text="Ír" onAction="#onIrMenuClick"/>
+                <MenuItem text="Módosít" onAction="#onModositMenuClick"/>
+                <MenuItem text="Töröl" onAction="#onTorolMenuClick"/>
+            </Menu>
+
+            <Menu text="Párhuzamos">
+                <MenuItem text="Párhuzamos Almenü" onAction="#onParhuzamosMenuClick"/>
+            </Menu>
+
+            <Menu text="Forex">
+                <MenuItem text="Számlainformációk" onAction="#onForexAccountsMenuClick"/>
+                <MenuItem text="Aktuális árak" onAction="#onForexPricingMenuClick"/>
+                <MenuItem text="Historikus árak" onAction="#onForexHistoricalMenuClick"/>
+                <MenuItem text="Pozíció nyitása" onAction="#onForexPositionMenuClick"/>
+                <MenuItem text="Pozíció zárása" onAction="#onForexCloseTradeMenuClick"/>
+                <MenuItem text="Nyitott pozíciók" onAction="#onForexOpenTradesMenuClick"/>
+            </Menu>
+
+            <Menu text="Súgó">
+                <MenuItem text="Névjegy" onAction="#onAboutMenuClick"/>
+            </Menu>
+        </MenuBar>
+    </top>
+    <center>
+        <Label text="Üdvözlünk a HatosLottó alkalmazásban!" style="-fx-font-size: 16px; -fx-text-alignment: center;"/>
+    </center>
+</BorderPane>
+

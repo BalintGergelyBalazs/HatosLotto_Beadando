@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/17"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.hatoslotto.OlvasController"
+      spacing="10" alignment="CENTER">
+    <Label text="Húzás adatok" style="-fx-font-size: 16px;" />
+    <TableView fx:id="huzasTable" prefHeight="150" prefWidth="800">
+        <columns>
+            <TableColumn text="ID" fx:id="huzasIdCol" />
+            <TableColumn text="Év" fx:id="huzasEvCol" />
+            <TableColumn text="Hét" fx:id="huzasHetCol" />
+        </columns>
+    </TableView>
+    <Label text="Húzott számok" style="-fx-font-size: 16px;" />
+    <TableView fx:id="huzottTable" prefHeight="150" prefWidth="800">
+        <columns>
+            <TableColumn text="ID" fx:id="huzottIdCol" />
+            <TableColumn text="Húzás ID" fx:id="huzottHuzasIdCol" />
+            <TableColumn text="Szám" fx:id="huzottSzamCol" />
+        </columns>
+    </TableView>
+    <Label text="Nyeremény adatok" style="-fx-font-size: 16px;" />
+    <TableView fx:id="nyeremenyTable" prefHeight="150" prefWidth="800">
+        <columns>
+            <TableColumn text="ID" fx:id="nyeremenyIdCol" />
+            <TableColumn text="Húzás ID" fx:id="nyeremenyHuzasIdCol" />
+            <TableColumn text="Találat" fx:id="nyeremenyTalalatCol" />
+            <TableColumn text="Darab" fx:id="nyeremenyDarabCol" />
+            <TableColumn text="Érték" fx:id="nyeremenyErtekCol" />
+        </columns>
+    </TableView>
+</VBox>
