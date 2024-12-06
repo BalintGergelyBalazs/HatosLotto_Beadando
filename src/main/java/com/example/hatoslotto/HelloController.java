@@ -11,7 +11,7 @@ public class HelloController {
     @FXML
     protected void onOlvasMenuClick() {
         try {
-            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("olvas-menu.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("olvas-menu.fxml"));
             Scene scene = new Scene(fxmlLoader.load(), 800, 600);
             Stage stage = new Stage();
             stage.setTitle("Olvas Almenü");
@@ -25,7 +25,7 @@ public class HelloController {
     @FXML
     protected void onOlvas2MenuClick() {
         try {
-            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("olvas2-view.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("olvas2-view.fxml"));
             Scene scene = new Scene(fxmlLoader.load(), 800, 600);
             Stage stage = new Stage();
             stage.setTitle("Olvas2 (Szűrés) almenü");
@@ -39,7 +39,7 @@ public class HelloController {
     @FXML
     protected void onIrMenuClick() {
         try {
-            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("ir-view.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("ir-view.fxml"));
             Scene scene = new Scene(fxmlLoader.load(), 400, 300);
             Stage stage = new Stage();
             stage.setTitle("Ír almenü");
@@ -53,7 +53,7 @@ public class HelloController {
     @FXML
     protected void onModositMenuClick() {
         try {
-            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("modosit-view.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("modosit-view.fxml"));
             Scene scene = new Scene(fxmlLoader.load(), 400, 300);
             Stage stage = new Stage();
             stage.setTitle("Módosít almenü");
@@ -67,7 +67,7 @@ public class HelloController {
     @FXML
     protected void onTorolMenuClick() {
         try {
-            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("torol-view.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("torol-view.fxml"));
             Scene scene = new Scene(fxmlLoader.load(), 400, 300);
             Stage stage = new Stage();
             stage.setTitle("Töröl almenü");
@@ -89,7 +89,7 @@ public class HelloController {
     @FXML
     protected void onParhuzamosMenuClick() {
         try {
-            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("parhuzamos-menu.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("parhuzamos-menu.fxml"));
             Scene scene = new Scene(fxmlLoader.load(), 400, 300);
             Stage stage = new Stage();
             stage.setTitle("Párhuzamos Almenü");
@@ -103,7 +103,7 @@ public class HelloController {
     @FXML
     protected void onForexAccountsMenuClick() {
         try {
-            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("forex-accounts-menu.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("forex-accounts-menu.fxml"));
             Scene scene = new Scene(fxmlLoader.load(), 800, 600);
             Stage stage = new Stage();
             stage.setTitle("Forex Számlainformációk");
@@ -117,7 +117,7 @@ public class HelloController {
     @FXML
     protected void onForexPricingMenuClick() {
         try {
-            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("forex-pricing-menu.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("forex-pricing-menu.fxml"));
             Scene scene = new Scene(fxmlLoader.load(), 400, 300);
             Stage stage = new Stage();
             stage.setTitle("Forex Aktuális Árfolyamok");
@@ -131,7 +131,7 @@ public class HelloController {
     @FXML
     protected void onForexHistoricalMenuClick() {
         try {
-            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("forex-historical-menu.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("forex-historical-menu.fxml"));
             Scene scene = new Scene(fxmlLoader.load(), 800, 600);
             Stage stage = new Stage();
             stage.setTitle("Forex Historikus Árfolyamok");
@@ -145,7 +145,7 @@ public class HelloController {
     @FXML
     protected void onForexPositionMenuClick() {
         try {
-            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("forex-position-menu.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("forex-position-menu.fxml"));
             Scene scene = new Scene(fxmlLoader.load(), 400, 300);
             Stage stage = new Stage();
             stage.setTitle("Pozíció Nyitása");
@@ -159,7 +159,7 @@ public class HelloController {
     @FXML
     protected void onForexCloseTradeMenuClick() {
         try {
-            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("forex-close-trade-menu.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("forex-close-trade-menu.fxml"));
             Scene scene = new Scene(fxmlLoader.load(), 400, 200);
             Stage stage = new Stage();
             stage.setTitle("Pozíció Zárása");
@@ -173,7 +173,7 @@ public class HelloController {
     @FXML
     protected void onForexOpenTradesMenuClick() {
         try {
-            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("forex-open-trades-menu.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("forex-open-trades-menu.fxml"));
             Scene scene = new Scene(fxmlLoader.load(), 600, 400);
             Stage stage = new Stage();
             stage.setTitle("Nyitott Pozíciók");

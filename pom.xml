@@ -83,7 +83,7 @@
                     <execution>
                         <id>default-cli</id>
                         <configuration>
-                            <mainClass>com.example.hatoslotto.HelloApplication</mainClass>
+                            <mainClass>com.example.hatoslotto.Main</mainClass>
                         </configuration>
                     </execution>
                 </executions>
@@ -97,7 +97,7 @@
                     <archive>
                         <manifest>
                             <addClasspath>true</addClasspath>
-                            <mainClass>com.example.hatoslotto.HelloApplication</mainClass>
+                            <mainClass>com.example.hatoslotto.Main</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
@@ -113,7 +113,7 @@
                     </descriptorRefs>
                     <archive>
                         <manifest>
-                            <mainClass>com.example.hatoslotto.HelloApplication</mainClass>
+                            <mainClass>com.example.hatoslotto.Main</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
