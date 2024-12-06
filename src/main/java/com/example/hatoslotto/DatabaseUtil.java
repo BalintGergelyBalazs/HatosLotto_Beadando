@@ -6,7 +6,9 @@ import javafx.collections.ObservableList;
 import java.sql.*;
 
 public class DatabaseUtil {
-    private static final String URL = "jdbc:sqlite:" + DatabaseUtil.class.getResource("/db/hatoslotto.db").getPath();
+    // Adatbázis elérési útvonal a c:\adatok\adatok.db fájlhoz
+    private static final String DB_PATH = "c:/adatok/adatok.db";
+    private static final String URL = "jdbc:sqlite:" + DB_PATH;
 
     public static Connection connect() {
         Connection conn = null;
